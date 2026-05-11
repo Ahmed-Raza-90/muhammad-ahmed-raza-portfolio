@@ -12,7 +12,7 @@
 <br />
 
 <!-- ─── LIVE DEMO BADGE ────────────────────────────────── -->
-[![🚀 Live Portfolio](https://img.shields.io/badge/🚀%20Live%20Portfolio-Visit%20Now-6c63ff?style=for-the-badge&logo=vercel&logoColor=white)](https://ahmed-raza-90.github.io/muhammad-ahmed-raza-portfolio)
+[![🚀 Live Portfolio](https://img.shields.io/badge/🚀%20Live%20Portfolio-Visit%20Now-6c63ff?style=for-the-badge&logo=vercel&logoColor=white)](https://muhammad-ahmed-raza-portfolio.vercel.app/)
 
 <br />
 
