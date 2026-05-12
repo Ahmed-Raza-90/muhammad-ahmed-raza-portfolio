@@ -1,8 +1,8 @@
 /* ── Defensive defaults — if firebase-config.js fails to load, the site still works ── */
-if (typeof FIREBASE_CONFIG === 'undefined') var FIREBASE_CONFIG = null;
-if (typeof EMAILJS_CONFIG  === 'undefined') var EMAILJS_CONFIG  = null;
-if (typeof USE_FIREBASE     === 'undefined') var USE_FIREBASE     = false;
-if (typeof USE_EMAILJS      === 'undefined') var USE_EMAILJS      = false;
+if (typeof FIREBASE_CONFIG === 'undefined') window.FIREBASE_CONFIG = null;
+if (typeof EMAILJS_CONFIG  === 'undefined') window.EMAILJS_CONFIG  = null;
+if (typeof USE_FIREBASE    === 'undefined') window.USE_FIREBASE    = false;
+if (typeof USE_EMAILJS     === 'undefined') window.USE_EMAILJS     = false;
 
 let db = null;
 
