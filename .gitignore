@@ -1,7 +1,6 @@
 # ============================================================
 # 🔒 CREDENTIALS & SECRETS  —  NEVER UPLOAD THESE!
 # ============================================================
-firebase-config.js
 .env
 .env.local
 .env.development

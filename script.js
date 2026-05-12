@@ -1,6 +1,12 @@
+/* ── Defensive defaults — if firebase-config.js fails to load, the site still works ── */
+if (typeof FIREBASE_CONFIG === 'undefined') var FIREBASE_CONFIG = null;
+if (typeof EMAILJS_CONFIG  === 'undefined') var EMAILJS_CONFIG  = null;
+if (typeof USE_FIREBASE     === 'undefined') var USE_FIREBASE     = false;
+if (typeof USE_EMAILJS      === 'undefined') var USE_EMAILJS      = false;
+
 let db = null;
 
-if (USE_FIREBASE) {
+if (USE_FIREBASE && FIREBASE_CONFIG) {
     try {
         firebase.initializeApp(FIREBASE_CONFIG);
         db = firebase.firestore();
@@ -10,7 +16,7 @@ if (USE_FIREBASE) {
     }
 }
 
-if (USE_EMAILJS) {
+if (USE_EMAILJS && EMAILJS_CONFIG) {
     try {
         emailjs.init(EMAILJS_CONFIG.publicKey);
         console.log("✅ EmailJS ready.");
